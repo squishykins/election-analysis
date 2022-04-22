@@ -77,7 +77,6 @@ with open(file_to_load) as election_data:
         # 5: Add a vote to that county's vote count.
         countyVotes[countyName] += 1
 
-
 # Save the results to our text file.
 with open(file_to_save, "w") as txt_file:
 
@@ -143,7 +142,6 @@ with open(file_to_save, "w") as txt_file:
             winning_count = can_votes
             winning_candidate = candidate_name
             winning_percentage = can_vote_percentage
-
 
     # Print the winning candidate (to terminal)
     winning_candidate_summary = (

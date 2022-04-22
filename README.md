@@ -5,14 +5,24 @@ During module 3 Tom and Seth requested help analyzing election data, now the com
 
 ## Election-Audit Results: 
 - How many votes were cast in this congressional election?
-  
+
+  ![totalvotes](https://user-images.githubusercontent.com/101137700/164793264-24c1d2a6-9770-47b5-8422-a541becad8eb.png)
+
 - Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
-  
+
+  ![countypercentage](https://user-images.githubusercontent.com/101137700/164793317-f8c97f9e-ff7f-4b50-955c-9ecb5981940b.png)
+
 - Which county had the largest number of votes?
-  
+
+  ![winningcounty](https://user-images.githubusercontent.com/101137700/164793349-807a4064-382f-43bc-9285-3441e5e0fdd0.png)
+
 - Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
-  
+
+  ![candidatepercentage](https://user-images.githubusercontent.com/101137700/164793365-114724ac-0a0c-4249-a5de-6fa51e19f354.png)
+
 - Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
+
+  ![winningcandidate](https://user-images.githubusercontent.com/101137700/164793384-30b05c1c-d643-4692-99fd-1e6e98851075.png)
 
 ## Election-Audit Summary: In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. 
 - Give at least two examples of how this script can be modified to be used for other elections.

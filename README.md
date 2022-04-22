@@ -1,7 +1,7 @@
 # election-analysis
 
 ## Overview of Election Audit: 
-During module 3 Tom and Seth requested help analyzing election data, now the commission which they represent is requestion additional information. This additional information is the county specific results and the county analysis. This repository goes over that analysis and the functions we utilized to perform our analysis.
+During module 3 Tom and Seth requested help analyzing election data, now the commission which they represent is requesting additional information. This additional information is the county specific results and the county analysis. This repository goes over that analysis and the functions we utilized to perform our analysis.
 
 ## Election-Audit Results: 
 - How many votes were cast in this congressional election?

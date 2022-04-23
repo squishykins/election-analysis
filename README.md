@@ -22,7 +22,7 @@ During module 3 Tom and Seth requested help analyzing election data, now the com
 
 - Which county had the largest number of votes?
 
-  ![winningcounty](https://user-images.githubusercontent.com/101137700/164793349-807a4064-382f-43bc-9285-3441e5e0fdd0.png)
+  ![winningcounty](https://user-images.githubusercontent.com/101137700/164873229-15394f0c-a6a2-4db4-b6c3-8baba45d089e.png)
 
 - Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
 

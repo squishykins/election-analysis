@@ -18,19 +18,62 @@ During module 3 Tom and Seth requested help analyzing election data, now the com
 
 - Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
 
+  With the election result printed there was a very clear winner due to the bulk of the votes ending up in the county of Denver compared to the two other counties in the dataset. 
+
+  First an if statement was created to check the county does not match any in the county list we initialized at the beginning.
+
+  ```python
+  if countyName not in counties:
+    counties.append(countyName)
+    countyVotes[countyName] = 0 #begin tracking the county's vote count
+  countyVotes[countyName] += 1 # add a vote to that county's vote count
+  ```
+  Then to provide the percentage of total votes for each county we take the county votes and divide by total votes and multiply that answer by 100 to get the percentage for each county's results.
+
+  ```python
+  vote_percentage = float(cvotes) / float(total_votes) * 100
+  county_results = (f"{countyName}: {vote_percentage:.1f}% ({cvotes:,})\n")
+  ```
   ![countypercentage](https://user-images.githubusercontent.com/101137700/164793317-f8c97f9e-ff7f-4b50-955c-9ecb5981940b.png)
 
 - Which county had the largest number of votes?
 
+  Using an if statement we determined that Denver was the winning county.
+
+  ```python
+  if (cvotes > winning_c_count): 
+    winning_c_count = cvotes
+    winning_county = countyName
+  ```
   ![winningcounty](https://user-images.githubusercontent.com/101137700/164793349-807a4064-382f-43bc-9285-3441e5e0fdd0.png)
 
 - Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
 
+  Utilizing a for loop we retrieve the candidate vote count and calculate the percentage for each candidate.
+
+  ```python
+  for candidate_name in candidate_votes:
+      can_votes = candidate_votes[candidate_name]
+      can_vote_percentage = float(can_votes) / float(total_votes) * 100
+      candidate_results = (f"{candidate_name}: {can_vote_percentage:.1f}% ({can_votes:,})\n")
+  ```
   ![candidatepercentage](https://user-images.githubusercontent.com/101137700/164793365-114724ac-0a0c-4249-a5de-6fa51e19f354.png)
 
 - Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
 
+Just like in the case of the county results there was a clear winner in the candidates results. This was found using an if statement that compared the candidate votes to the winning count and the candidate vote percentage to the candidate winning percentage. When it finds those variables it assigns them to those winning variables to then produce the summary in the image below.
+
+```python
+  if (can_votes > winning_count) and (can_vote_percentage > can_winning_percentage):
+      winning_count = can_votes
+      winning_candidate = candidate_name
+      winning_percentage = can_vote_percentage
+```
   ![winningcandidate](https://user-images.githubusercontent.com/101137700/164793384-30b05c1c-d643-4692-99fd-1e6e98851075.png)
 
 ## Election-Audit Summary: In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. 
 - Give at least two examples of how this script can be modified to be used for other elections.
+
+  This script can easily be modified using similar datasets. One of those ways is that you could import districts and break the counties into districts to understand more specific candidate impact. This narrows the scope of the script into more niche locations for specific needs of candidates. 
+
+  The second way that this script can be modified is that it can possibly be turned into a function where you can apply it to multiple locations and then compare those results. This broadens the scope of the script and allows you to widen the analysis.

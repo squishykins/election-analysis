@@ -61,17 +61,17 @@ During module 3 Tom and Seth requested help analyzing election data, now the com
 
 - Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
 
-Just like in the case of the county results there was a clear winner in the candidates results. This was found using an if statement that compared the candidate votes to the winning count and the candidate vote percentage to the candidate winning percentage. When it finds those variables it assigns them to those winning variables to then produce the summary in the image below.
+  Just like in the case of the county results there was a clear winner in the candidates results. This was found using an if statement that compared the candidate votes to the winning count and the candidate vote percentage to the candidate winning percentage. When it finds those variables it assigns them to those winning variables to then produce the summary in the image below.
 
-```python
-  if (can_votes > winning_count) and (can_vote_percentage > can_winning_percentage):
-      winning_count = can_votes
-      winning_candidate = candidate_name
-      winning_percentage = can_vote_percentage
-```
+  ```python
+    if (can_votes > winning_count) and (can_vote_percentage > can_winning_percentage):
+        winning_count = can_votes
+        winning_candidate = candidate_name
+        winning_percentage = can_vote_percentage
+  ```
   ![winningcandidate](https://user-images.githubusercontent.com/101137700/164793384-30b05c1c-d643-4692-99fd-1e6e98851075.png)
 
-## Election-Audit Summary: In a summary statement, provide a business proposal to the election commission on how this script can be used—with some modifications—for any election. 
+## Election-Audit Summary: 
 - Give at least two examples of how this script can be modified to be used for other elections.
 
   This script can easily be modified using similar datasets. One of those ways is that you could import districts and break the counties into districts to understand more specific candidate impact. This narrows the scope of the script into more niche locations for specific needs of candidates. 

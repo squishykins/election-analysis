@@ -45,7 +45,7 @@ During module 3 Tom and Seth requested help analyzing election data, now the com
     winning_c_count = cvotes
     winning_county = countyName
   ```
-  ![winningcounty](https://user-images.githubusercontent.com/101137700/164793349-807a4064-382f-43bc-9285-3441e5e0fdd0.png)
+  ![winningcounty](https://user-images.githubusercontent.com/101137700/164953291-2f41c897-5edc-466e-99ac-4af27dcb845d.png)
 
 - Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
 
